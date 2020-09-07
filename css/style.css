@@ -90,6 +90,111 @@ body {
   margin-top: 120px;
 }
 
+@media (max-width: 1334px) {
+  .start_main .start_main_content {
+    padding-top: 170px;
+  }
+  .start_main .start_main_content .intro_sup {
+    font-size: 3rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 3.5rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1084px) {
+  .start_main .start_main_content {
+    padding-top: 170px;
+  }
+  .start_main .start_main_content .intro_sup {
+    font-size: 2.7rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 3rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 992px) {
+  .start_main {
+    background-image: none;
+  }
+  .start_main .start_main_content {
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+  .start_main .start_main_content .intro_sup {
+    font-size: 3.6rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 4.5rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 2rem;
+  }
+  .start_main .start_main_image img {
+    width: 90%;
+    margin-top: 0px;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 692px) {
+  .start_main .start_main_content .intro_sup {
+    font-size: 3rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 3.9rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .start_main .start_main_content {
+    padding-left: 20px;
+  }
+  .start_main .start_main_content .intro_sup {
+    font-size: 2.5rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 3.2rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 431px) {
+  .start_main .start_main_content {
+    padding-bottom: 150px;
+  }
+  .start_main .start_main_content .intro_sup:after {
+    width: 30%;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35%;
+  }
+}
+@media (max-width: 380px) {
+  .start_main .start_main_content button {
+    padding: 6px 22px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .start_main .start_main_content .intro_sup {
+    font-size: 2.5rem;
+  }
+  .start_main .start_main_content .intro {
+    font-size: 2.9rem;
+  }
+  .start_main .start_main_content .intro_sub {
+    font-size: 1.3rem;
+  }
+}
 /*============================================start_main===================================================================*/
 .introduction .intro_img img {
   width: 97%;
@@ -119,12 +224,28 @@ body {
   color: black;
 }
 
+@media (max-width: 1300px) {
+  .introduction .intro_img img {
+    width: 100%;
+  }
+  .introduction .intro_content__heading {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+  .introduction .intro_content__paragraph {
+    width: 100%;
+    color: #767676;
+  }
+}
+@media (max-width: 645px) {
+  .introduction .intro_content__heading {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+}
 /*==================================================introduction===============================================================*/
-.experience .experience_content {
-  /*background-image: url("../images/client-info-bg.png");
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
-  background-position: 20px 20px;*/
+.experience {
+  margin-top: 100px;
 }
 .experience .experience_content .experience_content_section .call_now {
   margin-top: 120px;
@@ -180,6 +301,59 @@ body {
   width: 80%;
 }
 
+@media (max-width: 640px) {
+  .experience .experience_content .experience_content_section .border-image {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 400px) {
+  .experience .experience_content .experience_content_section .border-image {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 1130px) {
+  .experience .experience_content .experience_content_section .experience_date {
+    font-size: 5rem;
+    color: #854fee;
+    line-height: 75px;
+    padding-top: 10px;
+    position: relative;
+  }
+  .experience .experience_content .experience_content_section .experience_date_content {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 50px !important;
+  }
+}
+@media (max-width: 400px) {
+  .experience .brands .img_wrapper {
+    width: 86%;
+    margin: 15px 0;
+    padding: 25px 15px;
+    border: 1px solid silver;
+    transition: all 0.3s ease-in-out;
+  }
+  .experience .brands .img_wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .experience .brands .img_wrapper img {
+    width: 100%;
+    height: 35px;
+  }
+  .experience .experience_content_section {
+    width: 90%;
+  }
+}
 /*======================================================================experience===========================================================*/
 .services {
   margin: 250px 0px 200px;
@@ -245,6 +419,24 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 700px) {
+  .projects .projects_heading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .projects .projects_heading {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 605px) {
+  .projects .projects_buttons button {
+    font-size: 0.9rem;
+    border: none;
+    outline: none !important;
+    background-color: transparent;
+  }
+}
 /*==============================================================projects============================================================*/
 .clients_opinion {
   margin-top: 130px;
@@ -271,6 +463,11 @@ body {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 1084px) {
+  .clients_opinion .clients_slider {
+    width: 100%;
+  }
+}
 /*================================================================clients_opinion=================================================*/
 ::placeholder {
   color: white;
@@ -298,6 +495,7 @@ body {
   background-color: transparent;
   width: 340px;
   color: white;
+  max-width: 100%;
 }
 .subscription form button {
   padding: 10px 30px;
@@ -329,4 +527,10 @@ body {
   color: #4a57dd;
 }
 
+@media (max-width: 830px) {
+  .footer {
+    padding-top: 100px;
+    background-position: 50px;
+  }
+}
 /*===============================================================footer=================================================================*/
