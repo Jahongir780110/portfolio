@@ -356,7 +356,7 @@ body {
 }
 /*======================================================================experience===========================================================*/
 .services {
-  margin: 250px 0px 200px;
+  margin: 150px 0px 80px;
 }
 .services .service_heading {
   font-size: 2.5rem;
@@ -390,6 +390,9 @@ body {
 /*=====================================================services===============================================================*/
 .projects .projects_heading {
   font-size: 2.5rem;
+}
+.projects .element_item:nth-child(2) img, .projects .element_item:nth-child(3) img, .projects .element_item:nth-child(4) img {
+  border: 1px solid silver;
 }
 .projects .projects_buttons {
   margin-top: 75px;
