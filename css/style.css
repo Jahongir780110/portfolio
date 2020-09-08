@@ -206,6 +206,10 @@ body {
 .introduction .intro_content__paragraph {
   width: 80%;
   color: #767676;
+  word-spacing: 5px;
+}
+.introduction .intro_content__paragraph .github_link {
+  text-decoration: underline !important;
 }
 .introduction .intro_button {
   outline: none !important;
