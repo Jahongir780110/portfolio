@@ -219,33 +219,33 @@
 					<p class="projects_heading">RECENTLY DONE PROJECTS</p>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col projects_buttons">
 					<button type="button" class="active">ALL</button>
 					<button type="button" class="mx-md-4 mx-sm-2" data-filter=".popular">POPULAR</button>
 					<button type="button" class="mx-md-4 mx-sm-2" data-filter=".latest">LATEST</button>
 					<button type="button" class="mx-md-4 mx-sm-2" data-filter=".upcoming">UPCOMING</button>
 				</div>
-			</div>
+			</div> -->
 			<div class="row mt-5 projects_grid">
 				<div class="col-lg-6 col-12 element_item popular px-4">
-					<a href="./images/portfolio/uz-academy.png" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/uz-academy.png" class="w-100"></a>
-					<p class="project_img_heading mt-2"><a href="./uz.academy/index.html" target="blank">UZ ACADEMY</a></p>
+					<a href="#" target="blank" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/uz-academy.png" class="w-100"></a>
+					<p class="project_img_heading mt-2"><a href="#" target="blank">UZ ACADEMY</a></p>
 					<p class="project_img_content">Popular, Portfolio</p>
 				</div>
 				<div class="col-lg-6 col-12 element_item popular px-4 mt-lg-0 mt-5">
-					<a href="./images/portfolio/job-search-website.png" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/job-search-website.png" class="w-100"></a>
-					<p class="project_img_heading mt-2"><a href="./loop 20/index.html" target="blank">JOB SEARCH WEBSITE</a></p>
+					<a href="#" target="blank" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/job-search-website.png" class="w-100"></a>
+					<p class="project_img_heading mt-2"><a href="#" target="blank">JOB SEARCH WEBSITE</a></p>
 					<p class="project_img_content">Popular, Portfolio</p>
 				</div>
 				<div class="col-lg-6 col-12 element_item latest px-4 mt-5">
-					<a href="./images/portfolio/e-shop-website.png" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/e-shop-website.png" class="w-100"></a>
-					<p class="project_img_heading mt-2"><a href="./loop 30/assets/index.html" target="blank">E-SHOP WEBSITE</a></p>
+					<a href="#" target="blank" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/e-shop-website.png" class="w-100"></a>
+					<p class="project_img_heading mt-2"><a href="#" target="blank">E-SHOP WEBSITE</a></p>
 					<p class="project_img_content">Latest, Portfolio</p>
 				</div>
 				<div class="col-lg-6 col-12 element_item latest px-4 mt-5">
-					<a href="./images/portfolio/portfolio-website.png" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/portfolio-website.png" class="w-100"></a>
-					<p class="project_img_heading mt-2"><a href="#">PORTFOLIO WEBSITE</a></p>
+					<a href="#" target="blank" class="d-inline-block proj_img w-100 test-popup-link"><img src="./images/portfolio/portfolio-website.png" class="w-100"></a>
+					<p class="project_img_heading mt-2"><a href="#" target="blank">PORTFOLIO WEBSITE</a></p>
 					<p class="project_img_content">Latest, Portfolio</p>
 				</div>
 			</div>
@@ -455,27 +455,27 @@
 			$("body").css("padding-top", a);
 
 
-			let btns = $(".projects_buttons button");
-			btns.click(function(e){
-				$(".projects_buttons button").removeClass("active");
-				e.target.classList.add("active");
-				let selector = $(e.target).attr("data-filter");
-				$(".projects_grid").isotope({
-					filter:selector
-				});
-				return false;		
-			});
+			// let btns = $(".projects_buttons button");
+			// btns.click(function(e){
+			// 	$(".projects_buttons button").removeClass("active");
+			// 	e.target.classList.add("active");
+			// 	let selector = $(e.target).attr("data-filter");
+			// 	$(".projects_grid").isotope({
+			// 		filter:selector
+			// 	});
+			// 	return false;		
+			// });
 
 
-			$(".projects_grid .test-popup-link").magnificPopup({
-				type: "image",
-				gallery: {enabled: true}
-			});
+			// $(".projects_grid .test-popup-link").magnificPopup({
+			// 	type: "image",
+			// 	gallery: {enabled: true}
+			// });
 
 		});
-		$(document).ready(function(){
-			setTimeout(function(){$(".projects_buttons button").eq(0).trigger("click");}, 2000);
-		});
+		// $(document).ready(function(){
+		// 	setTimeout(function(){$(".projects_buttons button").eq(0).trigger("click");}, 2000);
+		// });
 	</script>
 </body>
 </html>
