@@ -15,35 +15,36 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
 
-	<div class="header fixed-top">
+	<div class="header" id="header">
 		<nav class="navbar navbar-expand-lg px-sm-5 px-2 py-3">
-				<a class="navbar-brand" href="#"><img width="30" height="30" src="./images/j.png"></a>
+				<a data-scroll href="#" class="navbar-brand"><img width="30" height="30" src="./images/j.png"></a>
 				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
 					<i class="fas fa-bars"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item px-3">
-							<a class="nav-link active" href="#">HOME</a>
+							<a data-scroll class="nav-link active" href="#">HOME</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">ABOUT</a>
+							<a data-scroll class="nav-link" href="#about">ABOUT</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">SERVICES</a>
+							<a data-scroll class="nav-link" href="#services">SERVICES</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">PORTFOLIO</a>
+							<a data-scroll class="nav-link" href="#portfolio">PORTFOLIO</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">TESTIMONIALS</a>
+							<a data-scroll class="nav-link" href="#testimonials">TESTIMONIALS</a>
 						</li>
 						<li class="nav-item px-3">
-							<a class="nav-link" href="#">CONTACT</a>
+							<a data-scroll class="nav-link" href="#contact">CONTACT</a>
 						</li>
 					</ul>
 				</div>
@@ -67,7 +68,7 @@
 		</div>
 	</div>
 
-	<div class="introduction mt-4">
+	<div class="introduction mt-4" id="about">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-6 col-12 pl-lg-5 px-2 intro_img mt-lg-0 mt-5">
@@ -172,7 +173,7 @@
 		</div>
 	</div>
 
-	<div class="services">
+	<div class="services" id="services">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col text-center">
@@ -210,7 +211,7 @@
 		</div>
 	</div>
 
-	<div class="projects" style="overflow: hidden;">
+	<div class="projects" style="overflow: hidden;" id="portfolio">
 		<div class="container-fluid px-sm-5 px-1">
 			<div class="row">
 				<div class="col-lg-6">
@@ -242,7 +243,7 @@
 		</div>
 	</div>
 
-	<div class="clients_opinion" style="overflow: hidden;">
+	<div class="clients_opinion" style="overflow: hidden;" id="testimonials">
 		<div class="container-fluid px-md-5 px-0">
 			<div class="row clients_header">
 				<div class="col px-0 text-center">
@@ -433,7 +434,7 @@
 		</div>
 	</div>
 
-	<div class="footer" style="overflow: hidden;">
+	<div class="footer" style="overflow: hidden;" id="contact">
 		<div class="container-fluid px-sm-5 px-0">
 			<div class="row text-center">
 				<div class="col">
@@ -452,10 +453,10 @@
 
 
 	<script type="text/javascript">
-		$(document).ready(function(){
-			let a = $(".header").outerHeight();
-			$("body").css("padding-top", a);
-		});
+		var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
 	</script>
 </body>
 </html>
