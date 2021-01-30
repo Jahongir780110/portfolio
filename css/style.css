@@ -123,8 +123,8 @@ body {
     background-image: none;
   }
   .start_main .start_main_content {
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
   .start_main .start_main_content .intro_sup {
     font-size: 3.6rem;
@@ -154,6 +154,7 @@ body {
 }
 @media (max-width: 650px) {
   .start_main .start_main_content {
+    padding-top: 60px;
     padding-left: 20px;
   }
   .start_main .start_main_content .intro_sup {
@@ -168,7 +169,7 @@ body {
 }
 @media (max-width: 431px) {
   .start_main .start_main_content {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
   .start_main .start_main_content .intro_sup:after {
     width: 30%;
@@ -189,10 +190,18 @@ body {
     font-size: 2.5rem;
   }
   .start_main .start_main_content .intro {
-    font-size: 2.9rem;
+    font-size: 2rem;
   }
   .start_main .start_main_content .intro_sub {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 310px) {
+  .start_main .start_main_content button {
+    padding: 6px 16px;
+  }
+  .start_main .start_main_content .cv {
+    margin-left: 10px;
   }
 }
 /*============================================start_main===================================================================*/
@@ -207,6 +216,7 @@ body {
   width: 80%;
   color: #767676;
   word-spacing: 5px;
+  word-wrap: break-word;
 }
 .introduction .intro_content__paragraph .github_link {
   text-decoration: underline !important;
@@ -240,6 +250,11 @@ body {
     width: 100%;
     color: #767676;
   }
+}
+@media(max-width: 992px) {
+  .introduction .intro_img {
+    display: none;
+  } 
 }
 @media (max-width: 645px) {
   .introduction .intro_content__heading {
@@ -338,6 +353,9 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .experience .experience_content .experience_content_section .experience_date_content {
+    font-size: 1.3rem;
+  }
   .experience .brands .img_wrapper {
     width: 86%;
     margin: 15px 0;
@@ -360,7 +378,7 @@ body {
 }
 /*======================================================================experience===========================================================*/
 .services {
-  margin: 150px 0px 80px;
+  margin: 100px 0px 100px;
 }
 .services .service_heading {
   font-size: 2.5rem;
@@ -370,7 +388,7 @@ body {
   color: #6b747c;
 }
 .services .cards_wrapper {
-  margin-top: 130px;
+  margin-top: 30px;
 }
 .services .cards .card_element {
   background-color: #f8fcfd;
@@ -431,11 +449,6 @@ body {
     font-size: 2rem;
   }
 }
-@media (max-width: 400px) {
-  .projects .projects_heading {
-    font-size: 1.6rem;
-  }
-}
 @media (max-width: 605px) {
   .projects .projects_buttons button {
     font-size: 0.9rem;
@@ -446,7 +459,7 @@ body {
 }
 /*==============================================================projects============================================================*/
 .clients_opinion {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .clients_opinion .clients_header .clients_header_heading {
   font-size: 3rem;
@@ -456,7 +469,7 @@ body {
   color: #6f6f6f;
 }
 .clients_opinion .clients_slider {
-  margin-top: 100px;
+  margin-top: 40px;
   width: 86%;
 }
 .clients_opinion .clients_slider .testimonials_heading {
@@ -476,6 +489,24 @@ body {
   .clients_opinion .clients_slider {
     width: 100%;
   }
+}
+@media(max-width: 576px) {
+  .clients_opinion .clients_header .clients_header_heading {
+    font-size: 2.2rem;
+  } 
+}
+.img-faiz{
+  width: 90%;
+}
+@media(max-width: 767px) {
+  .img-faiz{
+    width: 130px !important;
+  }
+}
+@media(max-width: 340px) {
+  .img-faiz{
+    width: 95% !important;
+  } 
 }
 /*================================================================clients_opinion=================================================*/
 ::placeholder {
@@ -518,7 +549,7 @@ body {
 .footer {
   background-image: url("../images/footer-bg.png");
   padding-top: 150px;
-  margin-top: 50px;
+  margin-top: 100px;
   padding-bottom: 80px;
 }
 .footer .footer_heading {
