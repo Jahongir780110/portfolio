@@ -497,6 +497,7 @@ body {
 }
 .img-faiz{
   width: 90%;
+  border-radius: 50%;
 }
 @media(max-width: 767px) {
   .img-faiz{
@@ -556,11 +557,11 @@ body {
   font-size: 1.5rem;
 }
 .footer .footer_content {
-  color: #777777;
+  color: #aaa;
 }
 .footer .social_media i {
   font-size: 1.5rem;
-  color: #e8e5eb;
+  color: #aaa;
   transition: all 0.3s ease;
 }
 .footer .social_media i:hover {
@@ -574,3 +575,101 @@ body {
   }
 }
 /*===============================================================footer=================================================================*/
+.hireMe {
+	width: 100%;
+	height: 100vh;
+	/* background-color: rgba(0, 0, 0, 0.8); */
+	z-index: 500;
+	position: fixed;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.hireMe .fa-telegram {
+	color: #3cb7df;
+}
+.hireMe .fa-facebook {
+	color: #38529a;
+}
+.hireMe .fa-phone {
+	color: #41af1e;
+}
+.hireMe .fa-github {
+  color: #302f2f;
+}
+.hireMe .fa-linkedin {
+  color: #0270ad;
+}
+.hireMe .fa-envelope {
+  color: #f7c011;
+}
+.hireMe_backdrop {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	z-index: -1;
+}
+.hireMe__content {
+	width: 600px;
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+}
+.hireMe__telephone, .hireMe__email {
+	font-size: 2rem;
+}
+.hireMe__email span{
+  font-size: 1.4rem;
+}
+.hireMe__social_media a{
+	font-size: 1.8rem;
+	margin: 0 15px;
+}
+.hireMe__close i {
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.close_hireMe {
+	display: none !important;
+}
+.open_hireMe {
+	display: flex !important;
+}
+@media(max-width: 650px) {
+	.hireMe__content {
+		width: 450px;
+	}
+}
+@media(max-width: 490px) {
+	.hireMe__content {
+		width: 380px;
+	}
+}
+@media(max-width: 400px) {
+	.hireMe__content {
+		width: 320px;
+		padding: 15px;
+  }
+  .hireMe__email span{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width: 340px) {
+	.hireMe__content {
+		width: 270px;
+		padding: 8px;
+	}
+	.hireMe__heading {
+		font-size: 1.4rem;
+	}
+	.hireMe__telephone {
+		font-size: 1.5rem;
+  }
+  .hireMe__email span{
+    font-size: 1rem;
+  }
+}
+/* =====================================hireMe====================================================== */
